@@ -1,0 +1,196 @@
+body.light-page{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#efe3ff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#10182f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+}
+
+.logo{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    line-height:28px;
+}
+
+.logo span{
+    color:#ff8c42;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+nav a.active{
+    border-bottom:3px solid #ff8c42;
+    padding-bottom:8px;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown{
+    position:relative;
+}
+
+.login-btn{
+    background:#ff8c42;
+    border:none;
+    color:white;
+    padding:12px 24px;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    right:0;
+    top:55px;
+    background:white;
+    width:230px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display:block;
+    padding:14px;
+    color:black;
+    text-decoration:none;
+}
+
+.dropdown-content a:hover{
+    background:#f3f3f3;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+/* ================= PAGE ================= */
+
+.investor-page{
+    width:90%;
+    margin:auto;
+    padding:60px 0;
+}
+
+.investor-page h1{
+    text-align:center;
+    font-size:55px;
+    color:#231942;
+    margin-bottom:30px;
+}
+
+.top-text{
+    text-align:center;
+    font-size:21px;
+    line-height:40px;
+    width:90%;
+    margin:auto;
+    color:#222;
+    margin-bottom:50px;
+}
+
+
+/* ================= INVESTOR CARD ================= */
+
+.investor-card{
+    background:#f6efff;
+    border-radius:25px;
+    padding:25px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.investor-card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    border-radius:12px;
+    background:white;
+    padding:10px;
+}
+
+.investor-content h2{
+    margin:0;
+    font-size:42px;
+    color:#111;
+}
+
+.investor-content span{
+    color:#b7774f;
+    font-size:32px;
+    font-weight:normal;
+}
+
+.investor-content p{
+    font-size:24px;
+    line-height:42px;
+    color:#222;
+    margin-top:15px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .investor-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .investor-content h2{
+        font-size:30px;
+    }
+
+    .investor-content span{
+        font-size:22px;
+    }
+
+    .investor-content p{
+        font-size:18px;
+        line-height:30px;
+    }
+
+    .investor-page h1{
+        font-size:40px;
+    }
+
+}

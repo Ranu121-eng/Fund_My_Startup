@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login-body">
+
+<!-- NAVBAR (same as index) -->
+<header>
+    <div class="logo">FUND MY START <span>UP</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="startup.html">Startup</a>
+        <a href="investor.html">Investor</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- LOGIN SECTION -->
+<section class="login-section">
+
+    <h1>Login to Your Account</h1>
+    <p>Access Your Startup or Investor Dashboard</p>
+
+    <div class="login-box">
+
+        <input type="text" placeholder="Username/Email Address">
+
+        <div class="password-field">
+            <input type="password" id="password" placeholder="Password">
+            <span onclick="togglePassword()">👁</span>
+        </div>
+
+        <p class="forgot">Forgot Password ?</p>
+
+        <h3>Login As</h3>
+
+        <select>
+            <option>Investor</option>
+            <option>Startup</option>
+        </select>
+
+        <button class="login-btn-main">Login</button>
+
+        <p class="bottom-text">
+            Don't have an account?
+            <br>
+            <a href="startup-register.html">Register as startup</a> |
+            <a href="investor-register.html">Register as Investor</a>
+        </p>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
